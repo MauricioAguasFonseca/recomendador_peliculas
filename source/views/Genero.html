@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+
+        .logo {
+            width: 100px;
+        }
+
+        .navbar-left ul, .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .navbar-left {
+            display: flex;
+        }
+
+        .navbar-left ul {
+            display: flex;
+            margin-left: 30px;
+        }
+
+        .navbar-left ul li a, .navbar-right ul li a{
+            text-decoration: none;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 8px;
+            border-radius: 8px;
+            margin: 30px;
+            font-size: 120%;
+        }
+
+        .navbar-left ul li a:hover, .navbar-right ul li a:hover {
+            color: #a78a7f;
+            border: 1px solid #a78a7f;
+        }
+
+        .genero {
+            width: 100%;
+            display: grid;
+            place-content: center; /*Pone todo al centro*/
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .individual {
+            display: inline;
+            grid-template-rows: auto 1fr auto;
+            width: 600px;
+            margin-top: 10px;
+        }
+        
+        .individual .rating {
+            margin-left: 30px;
+        }
+
+        header {
+            background-color: #660708;
+        }
+
+        .rating {
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            height: 50px;
+            font-size: 20px;
+            padding: 6px;
+            margin-bottom: 12px;
+        }
+
+        .primary-button {
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid #8b0000;  
+            color: #8b0000;
+            width: 300px; 
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            height: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            .navbar-left ul {
+                margin-left: 0px
+            }
+
+            .navbar-left ul li a, .navbar-right ul li a{
+            margin: 20px;
+        }
+        }
+    </style>
+</head>
+
+<header>
+    <nav>
+        <div class="navbar-left">
+            <img src="https://unamismavision.up.edu.mx/images/global/logo-nuevo-dorado.png" alt="logo" class="logo">
+
+            <ul>
+                <li>
+                    <a href="/Home.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="/Genero.html">Quiz</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+                <li>
+                    <a href="/Log_in.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+</header>
+<body>
+    <div class="genero">
+        <div class="individual">
+            <label for="genero" class="label">Selecciona tu género favorito</label>
+            <select class="rating">
+                <option value="">Selecciona un género</option>
+                <option value="1">Action</option>
+                <option value="2">Adventure</option>
+                <option value="3">Animation</option>
+                <option value="4">Crime</option>
+                <option value="5">Comedy</option>
+                <option value="6">Documentary</option>
+                <option value="7">Drama</option>
+                <option value="8">Family</option>
+                <option value="9">Fantasy</option>
+                <option value="10">Foreign</option>
+                <option value="11">History</option>
+                <option value="12">Horror</option>
+                <option value="13">Music</option>
+                <option value="14">Mystery</option>
+                <option value="15">Romance</option>
+                <option value="16">Science Fiction</option>
+                <option value="17">Thriller</option>
+                <option value="18">War</option>
+            </select>
+        </div>
+    </div>
+
+<form action="/Quiz">
+    <button class="primary-button signup-button">Siguiente</button>
+</form>
+
+        
+</body>
+</html>

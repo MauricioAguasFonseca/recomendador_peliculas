@@ -1,10 +1,11 @@
-const express = require('express');
-const router = express.Router();
-const pool = require('../database');
+const home = require('./home');
+const log_in = require('./log_in');
 
-router.get('/', (req,res) =>
+function routerApi(app)
 {
+  app.use('/home', home);
+  app.use('/log_in', log_in);
+}
 
-    res.send("H");
-});
-module.exports = router;
+
+module.exports = routerApi;

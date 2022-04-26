@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require ('path');
 const handlebars = require('express-handlebars');
+const routerApi = require('./routes/index');
 
 //initializations
 const app = express();
@@ -30,7 +31,8 @@ app.use((req, res, next) =>
     next();
 });
 //Routes
-app.use(require('./routes/index.js'));
+//app.use(require('./routes/index.js'));
+routerApi(app);
 
 //Public
 

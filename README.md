@@ -1,2 +1,2 @@
 # recomendador_peliculas
-Página web que te recoienda péliculas según tu gusto
+Página web que te recomienda péliculas según tu gusto

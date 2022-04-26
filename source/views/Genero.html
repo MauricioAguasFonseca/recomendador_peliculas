@@ -140,11 +140,11 @@
 
             <ul>
                 <li>
-                    <a href="/Home.html">Home</a>
+                    <a href="/Home">Home</a>
                 </li>
 
                 <li>
-                    <a href="/Genero.html">Quiz</a>
+                    <a href="/Genero">Quiz</a>
                 </li>
             </ul>
         </div>
@@ -152,7 +152,7 @@
         <div class="navbar-right">
             <ul>
                 <li>
-                    <a href="/Log_in.html">Log in</a>
+                    <a href="/Log_in">Log in</a>
                 </li>
             </ul>
         </div>
@@ -160,10 +160,16 @@
     </nav>
 </header>
 <body>
-    <div class="genero">
+    
+<form action="/Genero/Quz" method="post">
+    <label for="genero">Firstname:</label>
+    <input type="genero">
+    <input type="submit">
+</form>
+    <div class="Genero/Quiz">
         <div class="individual">
             <label for="genero" class="label">Selecciona tu género favorito</label>
-            <select class="rating">
+            <select class="genero">
                 <option value="">Selecciona un género</option>
                 <option value="1">Action</option>
                 <option value="2">Adventure</option>
@@ -186,10 +192,7 @@
             </select>
         </div>
     </div>
-
-<form action="/Quiz">
     <button class="primary-button signup-button">Siguiente</button>
-</form>
 
         
 </body>
